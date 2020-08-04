@@ -1,0 +1,18 @@
+﻿@model List<PresentationData.Formation>
+@{
+    ViewBag.Title = "ToutesLesFormations";
+}
+
+
+
+
+
+@foreach (var formation in Model)
+{
+    <div><span>Nom: </span><span>@formation.nom</span></div>
+    <div>
+        <span>Description: </span><span>@formation.description</span>    @Html.ActionLink("Test Liens", "DetailFormations", "Formation", new { nomSeo = "test3" }, new { nomSeo = "test4" })
+    </div>
+    <div>Note: <span></span></div>
+}
+    <h2>Toutes Les Formations</h2>

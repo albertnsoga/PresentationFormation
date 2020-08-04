@@ -1,0 +1,97 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title -Albert BECK NSOGA</title>
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+</head>
+<body>
+    <div class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+            <div class=" dropdown">
+                <div class="navbar-header ">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+
+
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+
+                    @Html.ActionLink("Albert BECK NSOGA", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
+                    <ul>
+                        <li>@Html.ActionLink("Accueil", "Index", "Home")</li>
+                        <li>@Html.ActionLink("Formations", "Formations", "Home")</li>
+                        <li>@Html.ActionLink("Expériences professionnelles", "Experiences", "Home")</li>
+                        <li>@Html.ActionLink("À propos de", "About", "Home")</li>
+                        <li>@Html.ActionLink("Contact", "Contact", "Home")</li>
+
+                    </ul>
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <hr />
+    <hr />
+    <hr />
+    <hr />
+    <hr />
+
+    <!-- Footer -->
+    <div class="container body-content">
+        @RenderBody()
+        <hr />
+
+        <footer class="page-footer font-small indigo">
+
+            <!-- Footer -->
+            <!-- Footer Text -->
+            <div class="card card-image" style="background-image: url(https://mdbootstrap.com/img/Photos/Others/img%20%2832%29.jpg);">
+                <div class="text-white text-center d-flex align-items-center rgba-black-strong py-5 px-4">
+                    <div class="widget">
+                        <h6 class="white-text"><i class="fas fa-plane"></i><strong><font color=" white">Confiance</font> </strong></h6>
+                        <h5 class="white-text"><i class="fas fa-plane"></i><strong><font color=" white">Polyvalence</font> </strong></h5>
+                        <h4 class="white-text"><i class="fas fa-plane"></i><strong><font color=" white">Adaptation</font> </strong></h4>
+                        <h3 class="white-text"><i class="fas fa-plane"></i><strong><font color=" white">Ecoute</font> </strong></h3>
+
+                    </div>
+
+                </div>
+            </div>
+        </footer>
+    </div>
+    <div class="container info-block text-center padding30">
+        <div class="row">
+            <div class=" col-md-3">
+                <p class="bigpercent">
+                    <b>65% JAVA</b>
+                </p>
+            </div>
+            <div class=" col-md-3">
+                <p class="bigpercent"> <b>85% ASP.NET</b></p>
+
+            </div>
+            <div class=" col-md-3">
+                <p class=" bigpercent"><b>95% C#</b></p>
+
+            </div>
+            <div class=" col-md-3">
+                <p class="bigpercent"><b>55% Gestion Projet</b></p>
+
+            </div>
+           
+        </div>
+    </div>
+    <!-- Footer -->>
+    @Styles.Render("~/Content/css")
+
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    @RenderSection("scripts", required: false)
+</body>
+</html>

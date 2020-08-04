@@ -1,0 +1,20 @@
+﻿@Model PresentationFormation.Models.LaisserUnAvisViewModel
+@{
+    /**/
+
+    ViewBag.Title = "Laisser Un Avis sur "+ Model;/*+ Model.FormationNom*/
+}
+@using (Html.BeginForm("SaveComment", "Avis", FormMethod.Post))
+{
+    <label>Nom : </label>
+    <input type="text" name="nom" id="nom" />
+    <br />
+    <label>Commentaire : </label>
+
+    <textarea name="commentaire" id="commentaire" rows="15"></textarea>
+
+    <input type="submit" value="ok" color="blue" />
+    <input type="hidden" value="Model.NomSeo" name="nomSeo"/ >
+}
+<h2>Laisser Un commentaire où vous le souhaitez</h2>
+

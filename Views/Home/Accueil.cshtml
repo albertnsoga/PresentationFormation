@@ -1,0 +1,54 @@
+﻿@{
+    ViewBag.Title = "Accueil";
+}
+
+
+<div class="container text-center">
+    @foreach (var dto in Model.ListFormations)
+    {
+        @Html.ActionLink("Accueil", "DetailFormations", "Formation");
+
+
+
+    }
+
+    <div class="row">
+       
+        <div class="container bg-white text-center padding30">
+            <h2>Quelques informations supplémentaires?</h2>
+            <h3>En cas de questions, n'hésitez pas de prendre contact.</h3>
+            <div class="row ">
+                <div class=" col-md-6">
+                    <span class="glyphicon glyphicon-heart logo-small"></span>
+                    <h4>sport</h4>
+                    <p>c'est bon pour la santé</p>
+                </div>
+                <div class=" col-md-6">
+                    <span class="glyphicon glyphicon-play-circle logo-small"></span>
+                    <h4>Associations</h4>
+                    <p>Parce que c'est bon d'aider les autres</p>
+
+
+                </div>
+                <div class=" col-md-6">
+
+                    <span class="glyphicon glyphicon-queen logo-small"></span>
+                    <h4>Culture</h4>
+                    <p>Litteraire toujours</p>
+
+                </div>
+                <div class=" col-md-6">
+                    <span class="glyphicon glyphicon-apple logo-small"></span>
+                    <h4>Projet</h4>
+                    <p>Chef de projet et créer ma propre boîte de communication</p>
+
+
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+</div>

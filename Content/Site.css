@@ -1,0 +1,117 @@
+﻿body {
+    padding-top: 50px;
+    padding-bottom: 20px;
+    background-color:aliceblue;
+}
+
+/* Set padding to keep content from hitting the edges */
+.body-content {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+/** class carousel*/
+
+/* Override the default bootstrap behavior where horizontal description lists 
+   will truncate terms that are too long to fit in the left column 
+*/
+.dl-horizontal dt {
+    white-space: normal;
+}
+
+/* Set width on the form input elements since they're 100% wide by default */
+input,
+select,
+textarea {
+    max-width: 280px;
+}
+/**
+
+*/
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+/***/
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    padding: 12px 16px;
+    z-index: 1;
+}
+/**/
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+    .dropdown-content a:hover {
+        background-color: #f1f1f1;
+    }
+
+
+ul {
+    list-style-type: none;
+    margin: 10px;
+    padding: 10px;
+    overflow: hidden;
+    background-color: #333;
+    display:block;
+}
+
+li {
+    float: left;
+}
+
+
+    li a, .dropbtn {
+        display: inline-block;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+    }
+
+        li a:hover, .dropdown:hover .dropbtn {
+            background-color: lightskyblue;
+        }
+
+    li.dropdown {
+        display: inline-block;
+    }
+
+
+    /*changement de la couleur du logo de la page about*/
+    .logo-small{
+        color:blue;
+        font-size:50px;
+    }
+    /*paddig de la page about*/
+.padding30{
+    padding:30px;
+}
+.m_navbar li a, .navbar, .m_navbar-brand{
+    color:#fff !important;
+}
+
+    .navbar.navbar-2 .navbar-toggler-icon {
+        background-image: url('https://mdbootstrap.com/img/svg/hamburger2.svg?color=fff');
+    }
+    .bigpercent{
+        font-size: 1em;
+        font-weight: bold;
+    }
+.info-block {
+    background-color: white;
+    padding: 15px;
+    border:2px solid lightskyblue;
+    max-height:240px;
+}
